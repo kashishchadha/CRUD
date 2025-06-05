@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">go to home</a>
+    <h1>Read all the users</h1>
+<%users.forEach(function(e) { %>
+  <div class="div">
+
+    <img src="<%=users.url%>" alt="">
+    <h3><%=users.name%></h3>
+    <h4><%=users.email%></h4>
+    <button><a href="/delete">Delete</a></button>
+    <button><a href="/update">Update</a></button>
+</div>
+<% }); %>
+
+
+
+</body>
+</html>
